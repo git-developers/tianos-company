@@ -1,0 +1,122 @@
+<section data-type="anchor" id="contact" class="well-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-push-2 offset-2">
+                <h6>Contactanos para consultas</h6>
+
+                <ul class="row offset-1 index-list">
+                    <li class="col-md-6">
+                        <span class="index-list__counter"></span>
+                        <address class="contact-info">
+                            Alfredo Bringas
+                            Representante de ventas
+                            <br>
+                            <br>
+                            <dl>
+                                <dt>
+                                    Tel&eacute;fono
+                                </dt>
+                                <dd>
+                                    <a href="javascript:void(0)">
+                                        (+51) 944.737.153
+                                    </a>
+                                </dd>
+                            </dl>
+                            <br>
+                            <dl>
+                                <dt>
+                                    Email
+                                </dt>
+                                <dd>
+                                    <a href="javascript:void(0)">
+                                        Tianos.System@gmail.com
+                                    </a>
+                                </dd>
+                            </dl>
+                        </address>
+                    </li>
+
+                    {#
+                    <li class="col-md-6">
+                        <span class="index-list__counter"></span>
+                        <address class="contact-info">
+                            9863 - 9867 Mill Road,
+                            Cambridge, MG09 99HT
+                            <dl>
+                                <dt>
+                                    Freephone
+                                </dt>
+                                <dd>
+                                    <a href="callto:#">
+                                        +1 800 559 6580
+                                    </a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    FAX
+                                </dt>
+                                <dd>
+                                    <a href="callto:#">
+                                        +1 800 889 9898
+                                    </a>
+                                </dd>
+                            </dl>
+                        </address>
+                    </li>
+                    #}
+                </ul>
+
+                {#
+                <h6>feedback</h6>
+                <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
+                    <input type="hidden" name="form-type" value="contact"/>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label data-add-placeholder data-add-icon>
+                                    <input type="text"
+                                           name="name"
+                                           placeholder="name"
+                                           data-constraints="@NotEmpty @LettersOnly"/>
+                                </label>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label data-add-placeholder data-add-icon>
+                                    <input type="text"
+                                           name="email"
+                                           placeholder="email"
+                                           data-constraints="@NotEmpty @Email"/>
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                                <label data-add-placeholder>
+                                    <textarea name="message" placeholder="message"
+                                              data-constraints="@NotEmpty"></textarea>
+                                </label>
+
+                                <div class="mfControls">
+                                    <button class="link" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mfInfo"></div>
+                    </fieldset>
+                </form>
+                #}
+
+            </div>
+            <div class="col-lg-6 col-lg-push-1">
+                <div class="rd-google-map">
+                    <div id="google-map" class="rd-google-map__model"></div>
+                    {#<ul class="rd-google-map__locations">#}
+                        {#<li data-x="-73.9874068" data-y="40.643180">#}
+                            {#<p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>#}
+                        {#</li>#}
+                    {#</ul>#}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

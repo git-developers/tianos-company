@@ -1,0 +1,71 @@
+{% extends "AppBundle::template.html.twig" %}
+
+{% block bodyclass %}
+    main-page
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <style>
+
+    </style>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ application_google_api_key }}"></script>
+
+    <script type="text/javascript">
+
+        $( document ).ready(function() {
+            var map;
+            var marker;
+            var mapCanvas = document.getElementById('google-map');
+            var mapOptions = {
+                center: new google.maps.LatLng(-12.120602,-77.0294574),
+                zoom: 17,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            map = new google.maps.Map(mapCanvas, mapOptions);
+        });
+
+    </script>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="page">
+
+        <header class="page-header">
+            {{ include("AppBundle::Default/Pages/header.html.twig") }}
+        </header>
+
+        <main class="page-content">
+            {{ include("AppBundle::Default/Pages/home.html.twig") }}
+            {#{{ include("AppBundle::Default/Pages/models.html.twig") }}#}
+            {{ include("AppBundle::Default/Pages/about.html.twig") }}
+            {{ include("AppBundle::Default/Pages/wedo.html.twig") }}
+            {{ include("AppBundle::Default/Pages/contact.html.twig") }}
+        </main>
+
+        <footer class="page-footer">
+            <div class="container">
+                <p>
+                    Tianos &copy <span id="copyright-year"></span> •
+                    <span class="rd-navbar--switch-to-desktop"></span>
+                    All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+
+{% endblock %}
+
+
+
+
