@@ -115,6 +115,9 @@ function isIE() {
         });
     }
 })(jQuery);;
+
+
+/*
 (function($) {
     var o = $('#google-map');
     if (o.length) {
@@ -210,6 +213,9 @@ function isIE() {
         });
     }
 })(jQuery);;
+*/
+
+
 (function($) {
     var o = $('.rd-navbar');
     if (o.length > 0) {

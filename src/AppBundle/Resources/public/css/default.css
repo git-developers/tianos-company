@@ -2,7 +2,6 @@
 @-webkit-keyframes sprite-animation {
     from {
         background-position: 0 0;
-        /*overflow: scroll;*/
     }
 }
 
@@ -4422,7 +4421,12 @@ h6,
 p,
 .list,
 .contact-info {
-    font-weight: 300
+    font-weight: 300;
+}
+
+address.contact-info {
+    font-weight: 300;
+    font-size: 18px;
 }
 
 p a:hover,
