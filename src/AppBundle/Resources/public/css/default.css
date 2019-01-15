@@ -8156,15 +8156,15 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .animation.animationToCenter .animation-wrap:after {
-    /*background-color: #fe7676;*/
-    background-color: #ff9d01;
+    background-color: #fe7676;
+    /*background-color: #ff9d01;*/
     right: 120%;
     left: -50%
 }
 
 .animation.animationToCenter .animation-wrap:before {
-    /*background-color: #fe7676;*/
-    background-color: #ff9d01;
+    background-color: #fe7676;
+    /*background-color: #ff9d01;*/
     right: -50%;
     left: 120%
 }
@@ -9446,8 +9446,8 @@ a.icon-primary:hover {
     top: 0;
     right: 0;
     z-index: 20;
-    /*background-color: #faf6f1*/
-    background-color: #ff9d01
+    background-color: #faf6f1
+    /*background-color: #ff9d01*/
 }
 
 .rd-navbar-fullwidth {
@@ -9797,8 +9797,8 @@ a.icon-primary:hover {
     padding: 112px 0 56px;
     bottom: -56px;
     color: #2f343a;
-    background: #ff9d01;
-    /*background: #faf6f1;*/
+    /*background: #ff9d01;*/
+    background: #faf6f1;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .25);
     z-index: 15;
     -webkit-transform: translateX(-105%);
