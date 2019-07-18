@@ -42,10 +42,15 @@ twig:
     globals:
         project_skin: 'skin-red'
         project_version: '1.2.0'
-        project_name: '%project_name%'
         google_api_key: '%google_api_key%'
-        project_name_html: '<b>C</b>Pool'
+        application_fb_app_id: '%application_fb_app_id%'
+        application_name: '%application_name%'
+        application_url: '%application_url%'
+        application_description: '%application_description%'
+        application_keywords: '%application_keywords%'
+        application_image: '%application_image%'
         application_google_api_key: '%application_google_api_key%'
+        application_theme_color: '%application_theme_color%'
 
 # Doctrine Configuration
 doctrine:

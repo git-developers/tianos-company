@@ -6,11 +6,26 @@
 <html lang="en" class="wide wow-animation smoothscroll-all">
 <head>
 
-    <title>{{ project_name }}</title>
+    <title>{{ application_name }}</title>
     <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content="{{ application_description }}">
+    <meta name="keywords" content="{{ application_keywords }}">
+    <meta name="author" content="{{ application_name }}">
     <link rel="icon" href="{{ asset('bundles/app/images/favicon.ico') }}" type="image/x-icon" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+    <meta name="theme-color" content="{{ application_theme_color }}"/>
+    <meta name="msapplication-TileColor" content="{{ application_theme_color }}"/>
+    <meta name="apple-mobile-web-app-title" content="{{ application_name }}"/>
+    <meta name="application-name" content="{{ application_name }}"/>
+
+    <meta property="og:url" content="{{ application_url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ application_name }}" />
+    <meta property="og:description" content="{{ application_description }}" />
+    <meta property="og:image" content="{{ application_image }}" />
+    <meta property="fb:app_id" content="{{ application_fb_app_id }}"/>
+
     {#<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>#}
 
     {% block stylesheets %}
